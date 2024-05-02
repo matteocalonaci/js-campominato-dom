@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #212121;
+
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    background-color: red;
+    border: 0.1rem solid yellow;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+#difficoltà {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#griglia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30rem;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.quadrato {
+    width: 3rem;
+    height: 3rem;
+    border: 0.1rem solid red;
+}
+
+.evidenziato {
+    background-color: blue;
+}
