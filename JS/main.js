@@ -20,12 +20,36 @@
 // MILESTONE #4 YOU WIN
 // Arriverà un momento in cui tutte le celle valide saranno state cliccate. Quello è il caso in cui la partita è vinta. Come me ne accorgo? Ci sono dei dati che posso controllare ogni volta che clicco su una cella per rendermi conto che è l'ultima cella?
 // _________________________________________________________________________________________________
+let ciao = "ciao"
+console.log(ciao)
+
+//creo variabile bomb 
+let bomb = "";
+
+//creo un array di bombe
+let arrayBomb = []
+
 
 
 let button = document.getElementById("btn")
 button.addEventListener("click", function () {
     griglia.innerHTML = ""
 
+
+
+    for (let i = 0; arrayBomb.length <= 15; i++) {
+        bomb = Math.floor(Math.random() * 100) + 1;
+        //se il numero è già presente --> nun facciamo nulla
+        if (arrayBomb.includes(bomb)) {
+        }
+        //altrimenti viene pushato nell'array
+        else {
+            console.log("Le bombe sono la numero:", bomb)
+            arrayBomb.push(bomb)
+            console.log(arrayBomb)
+        }
+
+    }
     for (i = 1; i <= 100; i++) {
 
         // * vado a creare una classe div equivalente ai quadrati in HTML e la salvo in una variabile.
